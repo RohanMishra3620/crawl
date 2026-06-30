@@ -365,6 +365,7 @@ function describeFetchProblem(array $response, string $url): string
 {
     if ($response['error'] !== '') {
         return $url . ' - cURL error: ' . $response['error'];
+        
     }
 
     $status = (int) $response['status'];
